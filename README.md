@@ -1,7 +1,7 @@
 # Basic-Calculator-Program-in-Python
 
 ## 📋 Description
-Beginner-friendly Python program that performs basic arithmetic operations — **addition, subtraction, multiplication, division, and modulus (%)** — on two numbers provided by the user.
+Python program that performs basic arithmetic operations — **addition, subtraction, multiplication, division, and modulus (%)** — on two numbers provided by the user.
 
 The calculator ensures that:
 - The user enters **valid numeric inputs**.
