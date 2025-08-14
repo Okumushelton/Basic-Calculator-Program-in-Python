@@ -7,7 +7,7 @@ while True:
         num2 = float(input("Enter the second number: "))
         break
     except ValueError:
-        print("❌ Invalid input. Please enter numeric values.\n")
+        print("Invalid input. Please enter numeric values.\n")
 
 # Step 2: Keep asking for a valid operation until a correct one is entered
 while True:
@@ -30,14 +30,15 @@ while True:
             result = num1 / num2
             print(f"{num1} / {num2} = {result}")
         else:
-            print("❌ Error: Division by zero is not allowed.")
+            print("Error: Division by zero is not allowed.")
         break
     elif operation == "%":
         if num2 != 0:
             result = num1 % num2
             print(f"{num1} % {num2} = {result}")
         else:
-            print("❌ Error: Modulus by zero is not allowed.")
+            print("Error: Modulus by zero is not allowed.")
         break
     else:
-        print("❌ Invalid operation. Please enter one of +, -, *, /, %.\n")
+        print("Invalid operation. Please enter one of +, -, *, /, %.\n")
+        
