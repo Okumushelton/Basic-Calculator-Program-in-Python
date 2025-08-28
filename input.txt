@@ -1,0 +1,5 @@
+Python is fun.
+File handling is important.
+We are learning OOP.
+Practice makes perfect.
+Keep coding every day.
