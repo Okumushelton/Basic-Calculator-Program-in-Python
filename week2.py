@@ -1,44 +1,45 @@
-# 🧮 Basic Calculator with Operation Validation and Modulus
+# This program demonstrates a series of common list operations in Python.
 
-# Step 1: Get two valid numbers once
-while True:
-    try:
-        num1 = float(input("Enter the first number: "))
-        num2 = float(input("Enter the second number: "))
-        break
-    except ValueError:
-        print("Invalid input. Please enter numeric values.\n")
+# Step 1: Create an empty list called my_list.
+my_list = []
 
-# Step 2: Keep asking for a valid operation until a correct one is entered
-while True:
-    operation = input("Enter the operation (+, -, *, /, %): ")
+# Step 2: Append elements to the list.
+# The append() method adds an item to the end of the list.
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
 
-    if operation == "+":
-        result = num1 + num2
-        print(f"{num1} + {num2} = {result}")
-        break
-    elif operation == "-":
-        result = num1 - num2
-        print(f"{num1} - {num2} = {result}")
-        break
-    elif operation == "*":
-        result = num1 * num2
-        print(f"{num1} * {num2} = {result}")
-        break
-    elif operation == "/":
-        if num2 != 0:
-            result = num1 / num2
-            print(f"{num1} / {num2} = {result}")
-        else:
-            print("Error: Division by zero is not allowed.")
-        break
-    elif operation == "%":
-        if num2 != 0:
-            result = num1 % num2
-            print(f"{num1} % {num2} = {result}")
-        else:
-            print("Error: Modulus by zero is not allowed.")
-        break
-    else:
-        print("Invalid operation. Please enter one of +, -, *, /, %.\n")
-        
+# The list is now [10, 20, 30, 40]
+
+# Step 3: Insert a value at a specific position.
+# The insert() method takes two arguments: the index and the value.
+my_list.insert(1, 15)
+
+# The list is now [10, 15, 20, 30, 40]
+
+# Step 4: Extend the list with another list.
+# The extend() method adds all items from an iterable (like another list) to the end.
+my_list.extend([50, 60, 70])
+
+# The list is now [10, 15, 20, 30, 40, 50, 60, 70]
+
+# Step 5: Remove the last element.
+# The pop() method removes and returns the last item in the list.
+my_list.pop()
+
+# The list is now [10, 15, 20, 30, 40, 50, 60]
+
+# Step 6: Sort the list in ascending order.
+# The sort() method sorts the list in place.
+my_list.sort()
+
+# The list is now [10, 15, 20, 30, 40, 50, 60]
+
+# Step 7: Find and print the index of a specific value.
+# The index() method returns the index of the first occurrence of a value.
+index_of_30 = my_list.index(30)
+print("The index of 30 is:", index_of_30)
+
+# Optional: Print the final list to see all the changes.
+print("The final list is:", my_list)
